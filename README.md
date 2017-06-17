@@ -1,9 +1,9 @@
 # ARM-Cortex-M-Hilbert-Transform
-DSP functions to perform Hilbert Transform on a set of real or complex data samples. Crucial in signal processing applications requiring analytic representation of the signal.
+DSP functions to compute Hilbert Transform of a set of real or complex data samples. Crucial in signal processing applications requiring analytic representation of the signal.
 <h2> Note: </h2>
 This function will only work in CMSIS based projects.
 <h2> Usage </h2>
-You only need to add the files "arm_chilbert.c" and "arm_hilbert.h" to your source group. The naming conventions are similar to functions provided by CMSIS-DSP software library. For further details on how to use the function, execute "test.c" provided in the "Examples" folder.
+You only need to add the files "arm_chilbert.c" and "arm_hilbert.h" to your source group. The naming conventions are similar to functions provided by CMSIS-DSP software library. For further details on how to use the function, execute "test.c" provided in the "Examples" folder. Supports lengths of [16,32,64...4096] only.
 <h2> Algorithm </h2>
 <ol>
 <li> Compute FFT of the vector.</li>
